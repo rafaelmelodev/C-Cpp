@@ -1,35 +1,22 @@
 //Codility Lesson 1 (Binary Gap)
 int max_binary_gap(unsigned N) {
     
-    //if N < 2 it means we have the only bit which may be set to 1 so we can't have the gap here.
-    if (N < 2) { return 0; }
-    
     // Init counters of bits for a current gap and a longest gap
     int max = 0, count = 0;
     
+    //if N < 2 it means we have the only bit which may be set to 1 so we can't have the gap here.
+    if (N < 2) { return 0; }
+
     /* N % 2 != 0 only in case we have the first bit set to 1.
      
-     Example:
-     0000 0001 = 1
-     0000 0011 = 3
-     0000 0111 = 7
-     0000 1111 = 15
-     and so on.
-     
      N % 2 == 0 only in case we have the first bit set to 0.
-     
-     Example:
-     0000 0000 = 0
-     0000 0010 = 2
-     0000 0110 = 6
-     0000 1110 = 14
-     and so on.
      
      Division of N by 2 do the same as right shift operation that is move all the bits right to one position, 
      but integer division operation exists in all programming languages when bit shift operations usually have
      low level languages only so division by 2 is more general solution.
      Thus this line means "repeat while the first bit is 0 right shift all the bits to one position.
     */
+
     while (N % 2 == 0) { N /= 2; }
     
     // Repeat while we have 1th bits in the N variable
