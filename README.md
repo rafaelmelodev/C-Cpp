@@ -18,7 +18,7 @@
 #### Compiler:
 
   - Change the include path of "c_cpp_properties.json" to :
-'''
+```
 {
     "configurations": [
         {
@@ -54,13 +54,13 @@
     ],
     "version": 4
 }
-'''
+```
 
 #### Builder:
 
   - From the main menu, choose Terminal > Configure Default Build Task. In the dropdown, which will display a tasks dropdown listing various predefined build tasks for C++ compilers. Choose g++.exe build active file, which will build the file that is currently displayed (active) in the editor.
   - This will create a tasks.json file in a .vscode folder and open it in the editor. The new tasks.json file should look similar to the JSON below:
-
+```
 {
   "version": "2.0.0",
   "tasks": [
@@ -80,13 +80,13 @@
     }
   ]
 }
-
+```
 #### Debugger:
 
 - From the main menu, choose Run > Add Configuration... and then choose C++ (GDB/LLDB).
 - You'll then see a dropdown for various predefined debugging configurations. Choose g++.exe build and debug active file.
 - VS Code creates a "launch.json" file, opens it in the editor, and builds and runs the file.
-
+```
 {
   "version": "0.2.0",
   "configurations": [
@@ -113,3 +113,4 @@
     }
   ]
 }
+```
