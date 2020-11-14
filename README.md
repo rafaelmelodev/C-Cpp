@@ -1,6 +1,6 @@
 # C++ projects and courses
 
-#### *Just feel projects and cours to improve my C++ skills and to help me (and maybe others) become a better developer.*
+#### *Just feel projects and courses to improve my C++ skills*
 
 
 ### Setup on Windows:
