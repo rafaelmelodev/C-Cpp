@@ -18,7 +18,7 @@
 #### Compiler:
 
   - Change the include path of "c_cpp_properties.json" to :
-´´´
+'''
 {
     "configurations": [
         {
@@ -54,7 +54,7 @@
     ],
     "version": 4
 }
-´´´
+'''
 
 #### Builder:
 
