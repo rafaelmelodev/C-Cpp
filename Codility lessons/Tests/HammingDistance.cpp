@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int hammingDistance(vector<int> a){
+int hammingDistance(vector<int> &a){
 
 int count = 0, count2 = 0;
 vector<int> v2, v3;
@@ -45,7 +45,7 @@ return (count < count2 ? count : count2);
 
 int main(){
 
-auto il = {0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1};
+auto il = {0, 1, 1, 1, 1};
 vector<int> v(il);
 int result = 0;
 

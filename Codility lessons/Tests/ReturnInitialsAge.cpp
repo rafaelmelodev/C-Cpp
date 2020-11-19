@@ -4,7 +4,7 @@
 
 using namespace std;
 
-string returnInitials(string a, string b, int c);
+string returnInitials(string &name, string &surname, int age);
 
 int main ()
 {
@@ -20,4 +20,4 @@ int main ()
 
 // Function to return the two initial letters of name and lastname plus age in the same string.
 
-string returnInitials(string a, string b, int c){ return  a.substr (0,2) + b.substr(0, 2) + std::to_string(c); }
+string returnInitials(string &name, string &surname, int age){ return  name.substr (0,2) + surname.substr(0, 2) + std::to_string(age); }
