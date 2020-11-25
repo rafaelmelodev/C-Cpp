@@ -1,7 +1,6 @@
 //Test CESAR: Odd Ocurrences in Array
 #include <iostream>
 #include <vector>
-#include <gtest/gtest>
 
 using namespace std;
 
@@ -11,8 +10,8 @@ int OddOcurrences(vector<int> &A) {
 
     // We just need to verify the unpaired number
     for(int i = 0; i < size; i++) {
-        //A ^ A = 0, A 
         res ^= A[i];
+        cout << res <<endl;
     }
     
     return res;
@@ -23,7 +22,7 @@ int main ()
     auto il = {9, 3, 9, 3, 9, 7, 9};
     vector<int> A(il);
 
-    cout << (7^9) <<endl;
+    cout << OddOcurrences(A) <<endl;
   
     return 0;
 }
